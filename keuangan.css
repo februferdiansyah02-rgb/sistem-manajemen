@@ -164,3 +164,111 @@ button:hover{
         align-items:flex-start;
     }
 }
+/* TABLET */
+@media (max-width: 992px){
+
+    nav{
+        width:80%;
+        padding:0 20px;
+    }
+
+    ul{
+        gap:40px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    body{
+        padding:15px;
+    }
+
+    nav{
+        width:90%;
+        padding:15px;
+        height:auto;
+    }
+
+    ul{
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+    a{
+        font-size:14px;
+    }
+
+    h1{
+        font-size:32px;
+        margin-top:120px;
+    }
+
+    .container{
+        width:100%;
+    }
+
+    .form-box{
+        padding:15px;
+    }
+
+    input,
+    select,
+    button{
+        font-size:14px;
+    }
+
+    .summary{
+        grid-template-columns:1fr;
+    }
+
+    .item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .item button{
+        width:100%;
+    }
+}
+
+
+/* HP KECIL */
+@media (max-width: 480px){
+
+    nav{
+        width:95%;
+        border-radius:15px;
+    }
+
+    ul{
+        gap:12px;
+    }
+
+    a{
+        font-size:13px;
+    }
+
+    h1{
+        font-size:26px;
+        margin-top:140px;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    .card h2{
+        font-size:20px;
+    }
+
+    button{
+        width:100%;
+    }
+}
