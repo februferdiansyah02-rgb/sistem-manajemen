@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Target - Manajemen Pribadi</title>
+    <link rel="stylesheet" href="target.css">
+</head>
+<body>
+
+    <nav>
+    
+    <ul>
+        <li><a href="index.html">DASBOR</a></li>
+        <li><a href="target.html">TARGET</a></li>
+        <li><a href="keuangan.html">KEUANGAN</a></li>
+        <li><a href="profil.html">PROFIL</a></li>
+    </ul>
+   </nav>
+
+    <div class="app-container">
+        <header class="main-header">
+            <div class="logo"> Sistem Target</div>
+            <button id="btn-tambah" class="btn-tambah">Tambah Target</button>
+        </header>
+
+        <div class="filter-wrapper">
+            <button class="btn-filter active" data-filter="semua"> Semua</button>
+            <button class="btn-filter" data-filter="Keuangan">olahraga</button>
+            <button class="btn-filter" data-filter="Belajar">Belajar</button>
+            <button class="btn-filter" data-filter="Karier"> Karier</button>
+            <button class="btn-filter" data-filter="Pribadi">barang</button>
+        </div>
+
+        <main id="target-grid" class="target-grid">
+            </main>
+    </div>
+
+    <div id="target-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title">➕ Tambah Target Baru</h3>
+            <form id="target-form">
+                <input type="hidden" id="target-id">
+                
+                <div class="form-group">
+                    <label for="target-name">Nama Target / Aktivitas</label>
+                    <input type="text" id="target-name" required placeholder="Misal: Belajar Tiga Kali Sehari">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="target-category">Kategori</label>
+                        <select id="target-category">
+                            <option value="Keuangan">olahraga</option>
+                            <option value="Belajar">Belajar</option>
+                            <option value="Karier">Karier</option>
+                            <option value="Pribadi">barang</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="target-period">Periode</label>
+                        <select id="target-period">
+                            <option value="Harian">Harian</option>
+                            <option value="Bulanan">Bulanan</option>
+                            <option value="Tahunan">Tahunan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="target-goal">Target Frekuensi (Goal Angka)</label>
+                        <input type="number" id="target-goal" required min="1" placeholder="Misal: 3">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-current">Sudah Dilakukan (Progress Awal)</label>
+                        <input type="number" id="target-current" required min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="target-deadline">Batas Waktu (Deadline)</label>
+                    <input type="date" id="target-deadline" required>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" id="btn-batal" class="btn-batal">Batal</button>
+                    <button type="submit" class="btn-simpan">Simpan Target</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

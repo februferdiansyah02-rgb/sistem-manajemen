@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    min-height:100vh;
+    background-image:url(walpaperbuku.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:60%;
+    min-height:55px;
+
+    background:#22222253;
+    padding:0 30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border-radius:20px;
+    z-index:10;
+}
+
+
+/* MENU */
+ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:100px;
+    list-style:none;
+}
+
+
+a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+
+a:hover{
+    color:aqua;
+}
+
+
+/* CONTENT */
+.container{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:100px 20px 20px;
+}
+
+
+/* CARD */
+.card{
+
+    width:100%;
+    max-width:900px;
+
+    background:rgba(2, 2, 2, 0.247);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(30, 29, 29, 0.844);
+
+    padding:40px 30px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+/* JUDUL */
+.judul{
+
+    color:white;
+
+    font-size:80px;
+    font-weight:800;
+
+    letter-spacing:.1em;
+
+    margin-bottom:10px;
+
+    text-shadow:
+    1px 1px 2px rgba(0,0,0,.5);
+}
+
+
+
+.subtitel{
+
+    color:#1a1919;
+
+    font-size:30px;
+
+    font-family:serif;
+}
+
+
+
+/* ================= */
+/* RESPONSIVE TABLET */
+/* ================= */
+
+@media(max-width:768px){
+
+
+    nav{
+
+        width:90%;
+
+        padding:15px 20px;
+
+    }
+
+
+    ul{
+
+        gap:25px;
+
+        flex-wrap:wrap;
+
+    }
+
+
+    a{
+
+        font-size:14px;
+
+    }
+
+
+
+    .card{
+
+        padding:30px 20px;
+
+    }
+
+
+
+    .judul{
+
+        font-size:45px;
+
+    }
+
+
+
+    .subtitel{
+
+        font-size:20px;
+
+    }
+
+}
+
+
+
+/* =============== */
+/* RESPONSIVE HP */
+/* =============== */
+
+@media(max-width:480px){
+
+
+    nav{
+
+        width:95%;
+
+        border-radius:15px;
+
+    }
+
+
+
+    ul{
+
+        gap:15px;
+
+    }
+
+
+
+    a{
+
+        font-size:13px;
+
+    }
+
+
+
+    .container{
+
+        padding-top:120px;
+
+    }
+
+
+
+    .judul{
+
+        font-size:32px;
+
+        letter-spacing:.05em;
+
+    }
+
+
+
+    .subtitel{
+
+        font-size:16px;
+
+    }
+
+
+}

@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    min-height:100vh;
+    background-image:url(walpaperbuku.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:60%;
+    min-height:55px;
+
+    background:#22222253;
+    padding:0 30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border-radius:20px;
+    z-index:10;
+}
+
+
+/* MENU */
+ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:100px;
+    list-style:none;
+}
+
+
+a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+
+a:hover{
+    color:aqua;
+}
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    margin-top: 100px;
+    color: rgb(236, 238, 243);
+    font-family:fantasy;
+    font-size: 50px;
+}
+
+.form-box{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    margin-top:15px;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#3b82f6;
+    color:white;
+    font-size:16px;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+.summary{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:rgb(240, 239, 239);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card h2{
+    margin-top:10px;
+}
+
+.transaksi{
+    background:rgb(252, 252, 253);
+    padding:20px;
+    border-radius:15px;
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    margin-top:10px;
+    background:rgba(255,255,255,0.08);
+    border-radius:10px;
+    flex-wrap:wrap;
+}
+
+.hapus{
+    background:#ef4444;
+}
+
+.hapus:hover{
+    background:#dc2626;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .item{
+        flex-direction:column;
+        gap:10px;
+        align-items:flex-start;
+    }
+}

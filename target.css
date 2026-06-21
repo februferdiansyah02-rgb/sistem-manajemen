@@ -1,0 +1,749 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+/* BODY */
+body{
+    min-height:100vh;
+    background-color:#121212;
+    color:#ffffff;
+
+    background-image:url(walpaperbuku.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:30px 20px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:60%;
+    min-height:55px;
+
+    background:#22222253;
+    padding:0 30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border-radius:20px;
+    z-index:10;
+}
+
+
+/* MENU */
+ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:100px;
+    list-style:none;
+}
+
+
+a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+
+a:hover{
+    color:aqua;
+}
+
+
+/* ================= JUDUL ================= */
+
+.judul{
+    margin-top:120px;
+    text-align:center;
+
+    color:white;
+
+    text-shadow:
+    2px 2px 0 black,
+    -2px 2px 0 black,
+    2px -2px 0 black,
+    -2px -2px 0 black;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.app-container{
+    max-width:1100px;
+    margin:40px auto 0;
+    align-items: center;
+}
+
+
+/* HEADER */
+
+.main-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding-bottom:20px;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.1);
+}
+
+.logo{
+    margin-top: 100px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    background: rgba(8, 8, 8, 0.482);
+    border-radius: 20px;
+    border: none;
+    padding: 12px 12px;
+
+}
+
+
+
+/* ================= BUTTON TAMBAH ================= */
+
+.btn-tambah{
+
+    background:#10B981;
+    color:rgb(15, 15, 15);
+
+    border:none;
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    font-weight:600;
+    cursor:pointer;
+
+    transition:.2s;
+    margin-top: 100px;
+}
+
+
+.btn-tambah:hover{
+    background:#059669;
+    transform:translateY(-2px);
+}
+
+
+
+/* ================= FILTER ================= */
+
+.filter-wrapper{
+
+    display:flex;
+    gap:12px;
+
+
+    margin:30px 0;
+
+    flex-wrap:wrap;
+}
+
+
+
+.btn-filter{
+
+    background:rgba(11, 11, 11, 0.545);
+
+    color:#f8f3f3;
+    justify-content: center;
+    align-items: center;
+
+    border:
+    1px solid rgba(9, 9, 9, 0.822);
+
+    padding:10px 20px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+
+
+.btn-filter.active{
+
+    background:rgba(16,185,129,.15);
+
+    color:#34D399;
+
+    border-color:#10B981;
+}
+
+
+
+/* ================= CARD ================= */
+
+
+.target-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(320px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.target-card{
+
+    background:
+    rgba(255,255,255,.06);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    border:
+    1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:24px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+
+
+.target-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.target-card.target-done{
+
+    border-color:#10B981;
+}
+
+
+
+/* HEADER CARD */
+
+.card-header{
+
+    display:flex;
+    justify-content:space-between;
+
+}
+
+
+
+.badge{
+
+    background:
+    rgba(255,255,255,.1);
+
+    padding:5px 12px;
+
+    border-radius:30px;
+
+    font-size:12px;
+}
+
+
+
+.plant-icon{
+
+    font-size:2.5rem;
+
+}
+
+
+
+/* ================= PROGRESS ================= */
+
+
+.progress-container{
+
+    margin:20px 0;
+
+}
+
+
+
+.progress-labels{
+
+    display:flex;
+    justify-content:space-between;
+
+    color:#ccc;
+
+    margin-bottom:8px;
+}
+
+
+
+.progress-bg{
+
+    height:12px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress-fill{
+
+    height:100%;
+
+    width:0%;
+
+    background:#10B981;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ================= CARD FOOTER ================= */
+
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-top:16px;
+
+    border-top:
+    1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.card-actions{
+
+    display:flex;
+    gap:8px;
+}
+
+
+
+/* BUTTON */
+
+.btn-check{
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+.btn-check:disabled{
+
+    background:#065f46;
+
+}
+
+
+
+.btn-icon-action{
+
+    background:#222;
+
+    color:white;
+
+    border:none;
+
+    padding:8px;
+
+    border-radius:8px;
+
+}
+
+
+
+/* ================= MODAL ================= */
+
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,.75);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+
+.hidden{
+
+    display:none!important;
+
+}
+
+
+
+.modal-content{
+
+    width:90%;
+    max-width:520px;
+
+    background:#181818;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.form-group input,
+.form-group select{
+
+    background:#242424;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #374151;
+
+}
+
+
+
+.modal-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+}
+
+
+
+.btn-batal{
+
+    background:#333;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+}
+
+
+
+.btn-simpan{
+
+    background:#10B981;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+}
+
+/* ================= RESPONSIVE TABLET ================= */
+
+@media screen and (max-width: 900px){
+
+
+    body{
+        padding:20px 15px;
+    }
+
+
+    nav{
+        width:90%;
+    }
+
+
+    ul{
+        gap:35px;
+        flex-wrap:wrap;
+    }
+
+
+    .app-container{
+        width:100%;
+    }
+
+
+    .main-header{
+        flex-direction:column;
+        gap:20px;
+        align-items:center;
+    }
+
+
+    .logo,
+    .btn-tambah{
+        margin-top:40px;
+    }
+
+
+    .target-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:20px;
+    }
+
+
+}
+
+
+
+/* ================= RESPONSIVE HP ================= */
+
+@media screen and (max-width:600px){
+
+
+    body{
+        padding:15px 10px;
+    }
+
+
+    /* NAVBAR */
+
+    nav{
+
+        width:95%;
+        min-height:auto;
+
+        padding:15px;
+
+    }
+
+
+    ul{
+
+        gap:15px;
+        justify-content:center;
+
+    }
+
+
+    a{
+
+        font-size:13px;
+
+    }
+
+
+
+    /* JUDUL */
+
+    .judul{
+
+        margin-top:100px;
+        font-size:35px;
+
+    }
+
+
+
+    /* HEADER */
+
+    .main-header{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+
+    .logo{
+
+        margin-top:30px;
+        font-size:20px;
+
+    }
+
+
+    .btn-tambah{
+
+        margin-top:0;
+        width:100%;
+
+    }
+
+
+
+    /* FILTER */
+
+    .filter-wrapper{
+
+        justify-content:center;
+
+    }
+
+
+    .btn-filter{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+
+
+    /* CARD */
+
+    .target-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .target-card{
+
+        padding:18px;
+
+    }
+
+
+    .card-header{
+
+        flex-direction:column;
+        gap:10px;
+
+    }
+
+
+    .card-footer{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+
+    .card-actions{
+
+        width:100%;
+
+    }
+
+
+    .btn-check,
+    .btn-icon-action{
+
+        flex:1;
+
+    }
+
+
+
+    /* MODAL */
+
+    .modal-content{
+
+        width:95%;
+        padding:20px;
+
+    }
+
+
+    .modal-actions{
+
+        flex-direction:column;
+
+    }
+
+
+    .btn-batal,
+    .btn-simpan{
+
+        width:100%;
+
+    }
+
+}
