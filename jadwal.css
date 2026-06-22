@@ -172,9 +172,11 @@ tbody tr:hover{
 @keyframes slide{
     from{
         transform:translateX(100%);
+        opacity: 0;
     }
     to{
         transform:translateX(0);
+        opacity: 1;
     }
 }
 
@@ -190,5 +192,122 @@ tbody tr:hover{
 
     th,td{
         padding:10px;
+    }
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media (max-width: 1024px){
+
+    nav{
+        width:85%;
+    }
+
+    ul{
+        gap:40px;
+    }
+
+    .judul{
+        font-size:40px;
+    }
+
+    .container{
+        width:90%;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px){
+
+    nav{
+        width:95%;
+        padding:15px;
+    }
+
+    ul{
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+    a{
+        font-size:14px;
+    }
+
+    .judul{
+        font-size:32px;
+        margin-top:120px;
+        padding:0 15px;
+    }
+
+    .container{
+        width:95%;
+        margin-top:100px;
+        padding:15px;
+    }
+
+    .form{
+        grid-template-columns:1fr;
+    }
+
+    .form input,
+    .form button{
+        width:100%;
+    }
+
+    table{
+        font-size:12px;
+    }
+
+    th,
+    td{
+        padding:8px;
+    }
+
+    .popup{
+        width:90%;
+        right:5%;
+        text-align:center;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP KECIL
+========================= */
+@media (max-width: 480px){
+
+    nav{
+        top:10px;
+        border-radius:15px;
+    }
+
+    ul{
+        gap:12px;
+    }
+
+    a{
+        font-size:13px;
+    }
+
+    .judul{
+        font-size:26px;
+    }
+
+    .container{
+        width:98%;
+        padding:10px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    .hapus{
+        padding:6px 10px;
+        font-size:12px;
     }
 }
