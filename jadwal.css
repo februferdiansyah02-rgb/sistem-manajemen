@@ -257,14 +257,7 @@ tbody tr:hover{
         width:100%;
     }
 
-    table{
-        font-size:12px;
-    }
-
-    th,
-    td{
-        padding:8px;
-    }
+  
 
     .popup{
         width:90%;
@@ -300,14 +293,7 @@ tbody tr:hover{
         padding:10px;
     }
 
-    table{
-        display:block;
-        overflow-x:auto;
-        white-space:nowrap;
-    }
+   
 
-    .hapus{
-        padding:6px 10px;
-        font-size:12px;
-    }
+    
 }
