@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my jadwal</title>
+    <link rel="stylesheet" href="jadwal.css">
+</head>
+<body>
+    <nav>
+    
+        <ul>
+            <li><a href="index.html">DASBOR</a></li>
+            <li><a href="target.html">TARGET</a></li>
+            <li><a href="keuangan.html">KEUANGAN</a></li>
+            <li><a href="jadwal.html">MY JADWAL</a></li>
+            <li><a href="profil.html">PROFIL</a></li>
+        
+        </ul>
+   </nav>
+
+<div class="popup" id="popup">
+    Oke siip jadwal dah nambah 
+    semangat!!
+</div>
+
+<div class="container">
+
+    <h1> Jadwal Harian</h1>
+
+    <div class="form">
+
+        <input type="date" id="tanggal">
+
+        <input type="time" id="jam">
+
+        <input
+            type="text"
+            id="kegiatan"
+            placeholder="Masukkan kegiatan">
+
+        <button onclick="tambahJadwal()">
+            Tambah
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Tanggal</th>
+                <th>Jam</th>
+                <th>Kegiatan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+   <script src="jadwal.js"></script>
+
+</body>
+</html>
